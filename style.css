@@ -1,0 +1,207 @@
+/* nav styles */
+
+.nav {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    background-color: rgb(151, 152, 153);
+}
+
+.nav .logo {
+    display: flex;
+    color: crimson;
+}
+
+.nav .nav-title ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+
+
+/* nav style end */
+
+
+/* header styles start */
+
+.head {
+    background-image: url(images/pic/background.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 0%;
+}
+
+.head .head-des {
+    gap: 50px;
+    text-align: center;
+    margin: 50px 40px;
+    padding: 250px 250px;
+}
+
+.head .head-des h1 {
+    font-size: 62px;
+}
+
+.head .head-des p {
+    font-size: 32px;
+    color: rgb(66, 64, 61);
+}
+
+.head .head-des button {
+    font-size: 30px;
+    background-color: red;
+    border-radius: 2px;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* header styles end */
+
+
+/* main styles start */
+
+.service {
+    display: flex;
+    gap: 60px;
+    /* background-image: url(images/pic/footer-bg.png); */
+    background-color: rgb(20, 19, 19);
+    margin: 20px 20px;
+    padding: 80px 80px;
+}
+
+.service .service-des {
+    color: white;
+    margin-top: 150px;
+}
+
+.service .service-des button {
+    font-size: 32px;
+    background-color: antiquewhite;
+    color: #262626;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid crimson;
+}
+
+.service .service-des h1 {
+    font-size: 40px;
+}
+
+.service .service-des .sohag {
+    display: flex;
+    gap: 20px;
+    /* background-color: white; */
+    margin-top: 40px;
+    border-left: 5px solid red;
+}
+
+.service .service-des .sohag button {
+    font-size: 15px;
+    height: 70px;
+    width: 80px;
+    padding: 15px;
+    border-radius: 40%;
+    border: 2px solid crimson;
+    background-color: chocolate;
+}
+
+.service .plan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+}
+
+.service .plan .web {
+    border: 5px solid whitesmoke;
+    box-shadow: 5px whitesmoke;
+    background-color: white;
+    padding: 20px 20px;
+    margin: 10px 10px;
+}
+
+.service .plan .web img {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* main styles end */
+
+
+/* Responsive media query for smart phn start */
+
+@media screen and (max-width:576px) {
+    .nav,
+    .nav .logo,
+    .nav .nav-title ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 25px;
+    }
+    .nav .logo img {
+        height: 80px;
+        width: 70px;
+    }
+    .head .head-des {
+        gap: 5px;
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+    .head .head-des h1 {
+        font-size: 32px;
+    }
+    .head .head-des p {
+        font-size: 16px;
+        color: rgb(66, 64, 61);
+    }
+    .head .head-des button {
+        font-size: 15px;
+        background-color: red;
+        border-radius: 2px;
+        color: black;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+
+/* Responsive media query for smart phn end */
+
+
+/* Responsive media query for TAB users  */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .nav,
+    .nav .logo,
+    .nav .nav-title ul {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+    }
+    .head .head-des {
+        gap: 5px;
+        margin: 30px 30px;
+        padding: 100px 100px;
+    }
+    .head .head-des h1 {
+        font-size: 45px;
+    }
+    .head .head-des p {
+        font-size: 25px;
+        color: rgb(66, 64, 61);
+    }
+    .head .head-des button {
+        font-size: 22px;
+        background-color: red;
+        border-radius: 2px;
+        color: black;
+        margin: 8px;
+        padding: 8px;
+    }
+}
+
+
+/* Responsive media query for TAB users end */
